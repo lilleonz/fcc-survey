@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FCC Survey Form</title>
+</head>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./style/survey.css">
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<body>
+<div id="main">
+	<header>
+		<h1 id="title">FCC Survey Form</h1>
+	</header>
+	
+	<div id="form">
+		<p id="description">
+			So you need a Web Page Developed? Tell me about your project.	
+		</p> 
+	<form id="survey-form">
+		<fieldset class="fieldset">
+	      <div class="fieldset-group">
+	        <label class="left" id="name-label" for="name">Name:</label>
+	        <input class="right" type="text" name="name" placeholder="Enter your name" id="name" required>
+	      </div>
+	      <div class="fieldset-group">
+	        <label class="left" id="email-label" for="email">Email:</label>
+	        <input class="right" type="email" name="email" placeholder="Enter your email" id="email" required>
+	      </div>
+	      <div class="fieldset-group">
+	        <label class="left" id="number-label" for="number">Phone:</label>
+	        <input class="right" type="number" name="phone" min="0" max="10000000000" id="number" placeholder="Phone">
+	      </div>
+	    </fieldset>
+
+	    <fieldset class="fieldset">
+	      <div class="fieldset-group">
+	        <label class="left dropdown" for="dropdown">Which option best describes your current role?</label>
+	        <select class="right" id="dropdown" name="dropdown">
+	          <option selected disabled >Select an option</option>
+	          <option value="designer" >Designer</option>
+	          <option value="pm" >Project Manager</option>
+	          <option value="owner">Company Owner</option>
+	          <option value="blog">Blogger</option>
+	          <option value="other">Other</option>
+	        </select>
+	      </div>
+	    </fieldset>
+
+	    <fieldset class="fieldset">
+	      <div class="fieldset-group">
+	        <label class="left">What type of Development do you need?</label>
+	        <div class="right">
+	          <ul class="list">
+	            <li><label><input type="radio" name ="recomedation" Value="1"> New Build</label></li>
+	            <li><label><input type="radio" name="recomedation" Value="2"> Modernize Update</label></li>
+	            <li><label><input type="radio" name="recomedation" Value="3"> Monthly Service Updates</label></li>
+	          </ul>
+	        </div>
+	      </div>
+	    </fieldset>
+
+	    <fieldset class="fieldset">
+	      <div class="fieldset-group">
+	        <label class="left">Type of project:</label>
+	        <ul class="list right" id="improve">
+	          <li><label for="landPage"><input id="landPage" name="improvement" value="1" type="checkbox"> Landing Page</label></li>
+	          <li><label for="cms"><input id="cms" name="improvement" value="2" type="checkbox"> CMS (WordPress, Drupal etc...)</label></li>
+	          <li><label for="seo"><input id="seo" name="improvementn" value="3"  type="checkbox"> SEO-Social Media Campaign</label></li>
+	          <li><label for="emailNews"><input id="emailNews" name="improvement" value="4" type="checkbox"> Email News Letters</label></li>
+	          <li><label for="otherWork"><input id="OtherWork" name="improvement" value="5" type="checkbox"> Other Work Specify in comments</label></li>
+	        </ul>
+	      </div>
+	    </fieldset>
+	    <fieldset class="fieldset">
+	      <div class="fieldset-group">
+	        <label for="comments" class="left">Any Comments or Suggestions?</label>
+	        <textarea id="comments" name="comments" placeholder="Enter your comment here..." rows="4" cols="30"></textarea>
+	      </div>
+	      <label for="submit"><input class="button" type="Submit" value="submit" id="submit"></label>
+	    </fieldset>
+			
+	</form>
+	
+
+	</div>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
